@@ -1,0 +1,10 @@
+[Unit]
+Description=automatic up of network interfaces on boot.
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/netif_startup
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+ip li set up eth0
+ip li set up lan0
+ip li set up lan1
+ip li set up wan
